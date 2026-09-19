@@ -1,0 +1,58 @@
+[
+  {
+    "id": "TQ-01",
+    "query": "Can I patent a classical Ayurvedic formulation?",
+    "jurisdiction": "India",
+    "expected_category": "Classical / Generic Medicine",
+    "expected_behavior": "Answer with citation to Patents Act Section 3(p) and TK pointer; should NOT abstain."
+  },
+  {
+    "id": "TQ-02",
+    "query": "I developed a new Ayurvedic formulation that is not found in a classical text. What IP and regulatory considerations should I check?",
+    "jurisdiction": "India",
+    "expected_category": "New / Non-Classical Drug",
+    "expected_behavior": "Answer distinguishing new/non-classical from classical; cite Patents Act and Drugs & Cosmetics Act; should NOT abstain."
+  },
+  {
+    "id": "TQ-03",
+    "query": "Can I patent a classical Ayurvedic formulation?",
+    "jurisdiction": "International",
+    "expected_category": "Classical / Generic Medicine",
+    "expected_behavior": "Answer using ONLY international sources (TRIPS, CBD, Nagoya, TKDL); must not cite the Indian Patents Act."
+  },
+  {
+    "id": "TQ-04",
+    "query": "I want to sell a herbal nutraceutical supplement made from ashwagandha as a health food.",
+    "jurisdiction": "India",
+    "expected_category": "Ayurveda-Aahar / Nutraceutical",
+    "expected_behavior": "Route to Food/nutraceutical regulation + labelling + ABS checklist triggered (herb/plant mentioned)."
+  },
+  {
+    "id": "TQ-05",
+    "query": "What quantum computing patent rules apply to my Ayurvedic formulation?",
+    "jurisdiction": "India",
+    "expected_category": "n/a",
+    "expected_behavior": "Out-of-scope / low-relevance query — system should show low confidence or abstain rather than fabricate."
+  },
+  {
+    "id": "TQ-06",
+    "query": "Is my product a cosmetic or a drug if it is a herbal face cream for skin whitening?",
+    "jurisdiction": "India",
+    "expected_category": "Cosmetic",
+    "expected_behavior": "Route to Cosmetic regulation + Drug regulation ambiguity flagged; moderate confidence expected."
+  },
+  {
+    "id": "TQ-07",
+    "query": "Does using a rare forest plant in my formulation require any biodiversity approval?",
+    "jurisdiction": "India",
+    "expected_category": "n/a",
+    "expected_behavior": "Should trigger ABS checklist and cite Biological Diversity Act, 2002."
+  },
+  {
+    "id": "TQ-08",
+    "query": "Can I register a geographical indication for a formulation unique to my region?",
+    "jurisdiction": "India",
+    "expected_category": "n/a",
+    "expected_behavior": "Should route to Geographical Indications and cite the GI Act, 1999."
+  }
+]
