@@ -54,5 +54,89 @@
     "jurisdiction": "India",
     "expected_category": "n/a",
     "expected_behavior": "Should route to Geographical Indications and cite the GI Act, 1999."
+  },
+  {
+    "id": "TQ-09",
+    "query": "Can I patent a purified botanical extract with standardized clinical efficacy data?",
+    "jurisdiction": "India",
+    "expected_category": "Phytopharmaceutical",
+    "expected_behavior": "Route to Phytopharmaceutical drug regulations and clinical evaluation rules."
+  },
+  {
+    "id": "TQ-10",
+    "query": "సాంప్రదాయ ఆయుర్వేద ఔషధానికి పేటెంట్ పొందవచ్చా?",
+    "jurisdiction": "India",
+    "expected_category": "Classical / Generic Medicine",
+    "expected_behavior": "Telugu query: Route to Section 3(p) classical prior art with Telugu answer translation."
+  },
+  {
+    "id": "TQ-11",
+    "query": "क्या मैं शास्त्रीय आयुर्वेदिक योग पेटेंट करा सकता हूँ?",
+    "jurisdiction": "India",
+    "expected_category": "Classical / Generic Medicine",
+    "expected_behavior": "Hindi query: Cite Section 3(p) with Hindi translation."
+  },
+  {
+    "id": "TQ-12",
+    "query": "மரபுவழி ஆயுர்வேத மருந்துக்கு காப்புரிமை பெற முடியுமா?",
+    "jurisdiction": "International",
+    "expected_category": "Classical / Generic Medicine",
+    "expected_behavior": "Tamil query (International): International TKDL and Nagoya framework translation."
+  },
+  {
+    "id": "TQ-13",
+    "query": "പരമ്പരാഗത ആയുർവേദ ഔഷധത്തിന് പേറ്റന്റ് നേടാനാകുമോ?",
+    "jurisdiction": "India",
+    "expected_category": "Classical / Generic Medicine",
+    "expected_behavior": "Malayalam query: Section 3(p) prior art search in Malayalam."
+  },
+  {
+    "id": "TQ-14",
+    "query": "किं अहम् शास्त्रीय आयुर्वेद योगस्य एकस्वम् प्राप्तुम् शक्नोमि?",
+    "jurisdiction": "India",
+    "expected_category": "Classical / Generic Medicine",
+    "expected_behavior": "Sanskrit query: Section 3(p) prior art check in Sanskrit."
+  },
+  {
+    "id": "TQ-15",
+    "query": "I created a modified Triphala tablet with synergistic bio-enhancing excipients. Is it patentable?",
+    "jurisdiction": "India",
+    "expected_category": "Patent / Proprietary Medicine",
+    "expected_behavior": "Route to Patent / Proprietary Medicine and test Section 3(e) synergistic efficacy."
+  },
+  {
+    "id": "TQ-16",
+    "query": "I am launching an Ayurvedic herbal energy drink. What regulatory approval is needed?",
+    "jurisdiction": "India",
+    "expected_category": "Ayurveda-Aahar / Nutraceutical",
+    "expected_behavior": "Route to Ayurveda-Aahar FSSAI safety checklist."
+  },
+  {
+    "id": "TQ-17",
+    "query": "What are the labelling requirements for an Ayurvedic herbal anti-acne gel?",
+    "jurisdiction": "India",
+    "expected_category": "Cosmetic",
+    "expected_behavior": "Route to Cosmetic rules 2020 labelling checklist."
+  },
+  {
+    "id": "TQ-18",
+    "query": "Explain how Section 3(p) of Indian Patent Act prevents biopiracy of traditional knowledge.",
+    "jurisdiction": "India",
+    "expected_category": "Classical / Generic Medicine",
+    "expected_behavior": "Cite Section 3(p) and TKDL digital database."
+  },
+  {
+    "id": "TQ-19",
+    "query": "How does WIPO protect traditional knowledge against foreign patent grants?",
+    "jurisdiction": "International",
+    "expected_category": "Classical / Generic Medicine",
+    "expected_behavior": "Cite WIPO Intergovernmental Committee and Nagoya Protocol."
+  },
+  {
+    "id": "TQ-20",
+    "query": "How do I setup a high-frequency crypto trading bot for stock exchanges?",
+    "jurisdiction": "India",
+    "expected_category": "n/a",
+    "expected_behavior": "Out-of-scope query: Should trigger low confidence / abstain."
   }
 ]

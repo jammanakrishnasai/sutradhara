@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 from pydantic import BaseModel, Field
 
 
@@ -41,6 +41,33 @@ class AbsChecklist(BaseModel):
     note: str = "Potentially relevant — verify applicability with the competent authority."
 
 
+class TkdlResemblance(BaseModel):
+    score: float
+    risk_band: str
+    risk_label: str
+    matched_terms: List[str]
+    matched_tk_sources: List[str]
+    breakdown: Dict[str, float]
+
+
+class ChecklistItem(BaseModel):
+    id: str
+    title: str
+    description: str
+    status: str
+    required: bool
+    authority: str
+
+
+class RegulatoryChecklist(BaseModel):
+    items: List[ChecklistItem]
+    total_items: int
+    completed_items: int
+    progress_percentage: float
+    jurisdiction: str
+    category: str
+
+
 class AnalyzeResponse(BaseModel):
     classification: ClassificationResult
     jurisdiction: str
@@ -56,15 +83,26 @@ class AnalyzeResponse(BaseModel):
     disclaimer: str = "Information, not legal advice."
     answer_language: str = "en"
     translation_available: bool = True
-    # Multilingual-pipeline transparency fields (see main.py debug logging).
-    # input_language is detected from the query TEXT, independent of the
-    # requested output `language` — the two can differ in principle.
     input_language: str = "en"
     retrieval_query: Optional[str] = None
-    # True only if the Groq paraphrase layer ran AND passed its
-    # citation-preservation check (see app/llm.py). False means the answer
-    # is exactly the template-assembled, source-grounded text.
     llm_paraphrased: bool = False
+    graph: Optional[dict] = None
+    tkdl_resemblance: Optional[TkdlResemblance] = None
+    regulatory_checklist: Optional[RegulatoryChecklist] = None
+
+
+class ConnectorGrantRequest(BaseModel):
+    source_id: str
+    email: Optional[str] = "user@ayush.gov.in"
+    token: Optional[str] = "demo_token_123"
+
+
+class ConnectorRevokeRequest(BaseModel):
+    source_id: str
+
+
+class PdfExportRequest(BaseModel):
+    analysis_data: Dict[str, Any]
 
 
 class EscalateRequest(BaseModel):
